@@ -20,7 +20,7 @@ date = date.replace(' ', '')
 command = 'mkdir ' + date
 os.system(command)
 
-# Does an NMAP scan over the network
+# Does an NMAP scan over the network if an ip is given
 if ip != '':
 	command = 'sudo nmap -sn -o nmap-results.txt ' + ip + '/24'
 	os.system('cd ' + date + ' && ' + command)
